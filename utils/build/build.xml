@@ -2,6 +2,8 @@
 <project name="cantine" default="ci" basedir=".">
     <property name="source" value="src" />
 
+    <php expression="include('/root/.composer/vendor/autoload.php')" />
+	
     <target name="ci"
         description="Tâche principale d'intégration continue"
         depends="clean,qa"
