@@ -8,7 +8,7 @@ $fourchettes = 150;
 $couteaux = 150;
 $cuilleres = 150;
 $assiettes = 150;
-echo "<h1>Bienvenue sur l'application de gestion 'cantine'</h1>"
+echo "<h1>Bienvenue sur l'application de gestion 'cantine'</h1>";
 echo "Liste des couverts :";
 echo "<br/>";
 echo "Fourchettes : " . $fourchettes;
