@@ -1,4 +1,7 @@
 <?php
+
+include('./Cantine.php');
+
 $fourchettes = 150;
 $couteaux = 150;
 $cuilleres = 150;
