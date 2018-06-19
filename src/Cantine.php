@@ -1,7 +1,7 @@
 <?php
 
 // Nous créons une classe « Cantine ».
-class Cantine
+public class Cantine
 {
   private $_couteaux;
   private $_fourchettes;
@@ -9,7 +9,7 @@ class Cantine
   private $_assiettes;
   private $_chef;
   
-  public __construct(){
+  public function __construct(){
     $this->_couteaux = 0;
     $this->_fourchettes = 0;
     $this->_cuilleres = 0;
