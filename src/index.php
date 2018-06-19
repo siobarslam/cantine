@@ -2,6 +2,8 @@
 
 include('./Cantine.php');
 
+$cantine = new Cantine();
+
 $fourchettes = 150;
 $couteaux = 150;
 $cuilleres = 150;
@@ -25,4 +27,6 @@ $quantites[] = $cuilleres;
 $quantites[] = $assiettes;
 $repas = min($quantites);
 echo "Vous pouvez organiser un repas avec " . $repas . " convives.";
+
+echo $cantine->toString();
 ?>
