@@ -1,7 +1,7 @@
 <?php
 
 // Nous créons une classe « Cantine ».
-public class Cantine
+class Cantine
 {
   private $_couteaux;
   private $_fourchettes;
