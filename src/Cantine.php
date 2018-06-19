@@ -9,7 +9,7 @@ public class Cantine
   private $_assiettes;
   private $_chef;
   
-  public function __construct(){
+  function __construct(){
     $this->_couteaux = 0;
     $this->_fourchettes = 0;
     $this->_cuilleres = 0;
