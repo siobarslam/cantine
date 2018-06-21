@@ -34,5 +34,11 @@
         	<logger type="overview-pyramid" outfile="${project.basedir}/build/pdepend/overview-pyramid.svg" />
     	</phpdepend>
     </target>
+	
+    <target name="phpmd">
+    <phpmd file="${project.basedir}/src">
+        <formatter type="xml" outfile="${project.basedir}/build/phpmd.xml" />
+    </phpmd>
+</target>
 
 </project>
