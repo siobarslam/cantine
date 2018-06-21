@@ -27,6 +27,7 @@
     	<phingcall target="pdepend" />
 	<phingcall target="phpmd" />
 	<phingcall target="phpcpd" />
+	<phingcall target="phploc" />
     </target>
 	
     <target name="pdepend">
@@ -47,6 +48,10 @@
     <phpcpd file="${project.basedir}/src">
         <formatter type="pmd" outfile="${project.basedir}/build/logs/pmd-cpd.xml"/>
     </phpcpd>
+    </target>
+	
+    <target name="phploc">
+    	<exec logoutput="true" dir="${project.basedir}" command="phploc --log-csv '${project.basedir}/build/logs/phploc.csv' '${project.basedir}/src'" escape="false" />
     </target>
 
 </project>
