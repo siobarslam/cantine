@@ -26,6 +26,7 @@
     <target name="qa" description="Lance les outils d'analyse">
     	<phingcall target="pdepend" />
 	<phingcall target="phpmd" />
+	<phingcall target="phpcpd" />
     </target>
 	
     <target name="pdepend">
@@ -40,6 +41,12 @@
     <phpmd file="${project.basedir}/src">
         <formatter type="xml" outfile="${project.basedir}/build/phpmd.xml" />
     </phpmd>
-</target>
+    </target>
+	
+    <target name="phpcpd">
+    <phpcpd file="${project.basedir}/src">
+        <formatter type="pmd" outfile="${project.basedir}/build/logs/pmd-cpd.xml"/>
+    </phpcpd>
+    </target>
 
 </project>
