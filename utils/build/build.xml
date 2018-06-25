@@ -30,6 +30,7 @@
 	<phingcall target="phploc" />
 	<phingcall target="phpcs" />
 	<phingcall target="phpdoc" />
+	<phingcall target="phpunit" />
     </target>
 	
     <target name="pdepend">
@@ -71,6 +72,10 @@
         -t ${project.basedir}/build/api
         --template responsive
     " />
+    </target>
+	
+    <target name="phpunit">
+    	<exec logoutput="true" dir="${project.basedir}/tests" command="phpunit" escape="false" />
     </target>
 
 </project>
