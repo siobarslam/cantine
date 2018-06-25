@@ -20,7 +20,7 @@ class Cantine
   // Nous déclarons une méthode dont le seul but est d'afficher un texte.
   public function toString()
   {
-    return "Cantine dirigée par " .$this->_chef;
+    return "Cantine dirigee par " .$this->_chef;
   }
 }
 ?>
