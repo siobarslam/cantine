@@ -18,50 +18,50 @@ class Cantine
   }
   
   /**
-  *	@return accesseur de la propriété $_couteaux
+  * @return accesseur de la propriété $_couteaux
   */
   public function getCouteaux(){
 	  return $this->_couteaux;
   }
   /**
-  *	@return accesseur de la propriété $_fourchettes
+  * @return accesseur de la propriété $_fourchettes
   */
   public function getFourchettes(){
 	  return $this->_fourchettes;
   }
   /**
-  *	@return accesseur de la propriété $_cuilleres
+  * @return accesseur de la propriété $_cuilleres
   */
   public function getCuilleres(){
 	  return $this->_cuilleres;
   }
   /**
-  *	@return accesseur de la propriété $_assiettes
+  * @return accesseur de la propriété $_assiettes
   */
   public function getAssiettes(){
 	  return $this->_assiettes;
   }
   
   /**
-  *	@return accesseur de la propriété $_couteaux
+  * @return accesseur de la propriété $_couteaux
   */
   public function setCouteaux($c){
 	  $this->_couteaux = $c;
   }
   /**
-  *	setter de la propriété $_fourchettes
+  * setter de la propriété $_fourchettes
   */
   public function setFourchettes($f){
 	  $this->_fourchettes = $f;
   }
   /**
-  *	setter de la propriété $_cuilleres
+  * setter de la propriété $_cuilleres
   */
   public function setCuilleres($c){
 	  $this->_cuilleres = $c;
   }
   /**
-  *	setter de la propriété $_assiettes
+  * setter de la propriété $_assiettes
   */
   public function setAssiettes($a){
 	  $this->_assiettes = $a;
@@ -73,7 +73,6 @@ class Cantine
     return "Cantine dirigee par " .$this->_chef;
   }
   
-
   public function maxRepas(){
 	  return 0;
   }
