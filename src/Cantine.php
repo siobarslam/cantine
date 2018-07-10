@@ -82,5 +82,15 @@ class Cantine
 	  $les_elements[] = $this->getFourchettes();
 	  return min($les_elements);
   }
+  
+  public function maxConvives()
+  {
+	  $les_elements = array();
+	  $les_elements[] = $this->getAssiettes();
+	  $les_elements[] = $this->getCouteaux();
+	  $les_elements[] = $this->getCuilleres();
+	  $les_elements[] = $this->getFourchettes();
+	  return min($les_elements);
+  }
 }
 ?>
